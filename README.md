@@ -21,16 +21,16 @@ should support api 26 and more
 
 ### Android Studio
 
-* Select `Run -> Run 'app'` (or `Debug 'app'`) from the menu bar
-* Select the device you wish to run the app on and click 'OK'
+- Select `Run -> Run 'app'` (or `Debug 'app'`) from the menu bar
+- Select the device you wish to run the app on and click 'OK'
 
 ## Tech used
-    - #MVVM pattern.
-    - #Dependency Injection using Hilt.
-    - #Naviagtion controller for movement.
-    - #Retrofit for api calling.
-    - #Couritines for background tasks.
-    - #Glide for loading images.
+    - MVVM pattern.
+    - Dependency Injection using Hilt.
+    - Naviagtion controller for movement.
+    - Retrofit for api calling.
+    - Couritines for background tasks.
+    - Glide for cashing and loading images.
 
 
 ## Api Data
