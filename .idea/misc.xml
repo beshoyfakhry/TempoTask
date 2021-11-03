@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-anydpi/broken_image.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_search.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_source.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-anydpi/image_wallpaper.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_outline_search_24.xml" value="0.20104166666666667" />
         <entry key="app/src/main/res/drawable/round_gray.xml" value="0.20104166666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
