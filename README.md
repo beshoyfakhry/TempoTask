@@ -34,8 +34,8 @@ should support api 26 and more
 
 
 ## Api Data
- sortBy:publishedAt
- from  :2021-10-10  
+  - sortBy:publishedAt
+  - from  :2021-10-10  
  
  This specific from date as we are using a free version of the api so we can not retrieve from old date.
 
