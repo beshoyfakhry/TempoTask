@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/news_listing">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/news_listing"
@@ -25,5 +25,15 @@
         <argument
             android:name="selectedArticle"
             app:argType="com.tempo.task.data.model.ArticleObject" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.tempo.task.ui.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/splash_fragment"
+        >
+        <action
+            android:id="@+id/action_splashFragment_to_news_listing"
+            app:destination="@id/news_listing" />
     </fragment>
 </navigation>

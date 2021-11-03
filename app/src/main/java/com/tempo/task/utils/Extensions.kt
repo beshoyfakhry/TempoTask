@@ -1,9 +1,11 @@
 package com.tempo.task.utils
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
@@ -13,6 +15,9 @@ import java.time.Instant
 
 object Extensions {
 
+    fun Context.showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+    }
 
     fun View.hideKeyboard() {
         val inputMethodManager =
@@ -32,7 +37,7 @@ object Extensions {
     }
 
     @SuppressLint("DefaultLocale")
-    fun String.dateToAgo(now:Instant): String {
+    fun String.dateToAgo(now: Instant): String {
 
         val then: Instant = Instant.parse(this)
         val now: Instant = now
