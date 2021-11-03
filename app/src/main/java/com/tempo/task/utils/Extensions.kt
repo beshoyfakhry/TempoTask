@@ -32,18 +32,18 @@ object Extensions {
     }
 
     @SuppressLint("DefaultLocale")
-    fun String.dateToAgo(): String {
+    fun String.dateToAgo(now:Instant): String {
 
         val then: Instant = Instant.parse(this)
-        val now: Instant = Instant.now()
+        val now: Instant = now
         val duration: Duration = Duration.between(then, now)
 
         var concatString = ""
         if (duration.toDays().toInt() != 0) {
-            concatString = "%d days ago "
+            concatString = "%02d days ago"
 
             if (duration.toDays().toInt() == 1)
-                concatString = "%d day ago "
+                concatString = "%02d day ago"
 
 
             return Utils.formatStringToAgo(
@@ -53,16 +53,15 @@ object Extensions {
         }
 
         if (duration.toHours().toInt() != 0) {
-            concatString += "%02d hours ago "
+            concatString += "%02d hours ago"
 
             if (duration.toHours().toInt() == 1)
-                concatString += "%02d hour ago "
+                concatString += "%02d hour ago"
 
             return Utils.formatStringToAgo(
                 concatString, duration,
                 duration.toHours()
             )
-
 
         }
         if (duration.toMinutes().toInt() != 0) {
