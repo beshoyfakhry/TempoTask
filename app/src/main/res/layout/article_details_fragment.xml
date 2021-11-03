@@ -98,6 +98,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_source" />
+        android:src="@drawable/ic_source"
+        android:layout_margin="16dp"
+        />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
