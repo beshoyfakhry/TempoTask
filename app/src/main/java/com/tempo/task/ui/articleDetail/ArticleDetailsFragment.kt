@@ -13,6 +13,7 @@ import com.tempo.task.databinding.ArticleDetailsFragmentBinding
 import com.tempo.task.utils.Extensions.dateToAgo
 import com.tempo.task.utils.Extensions.loadImage
 import kotlinx.android.synthetic.main.article_details_fragment.*
+import java.time.Instant
 
 
 class ArticleDetailsFragment : Fragment(R.layout.article_details_fragment) {
@@ -32,7 +33,7 @@ class ArticleDetailsFragment : Fragment(R.layout.article_details_fragment) {
         binding.apply {
             tvNewsTitle.text = article.title
             tvNewsDesc.text = article.description
-            tvNewsDate.text = article.publishedAt.dateToAgo()
+            tvNewsDate.text = article.publishedAt.dateToAgo(Instant.now())
 
 
             ivArticleImage.loadImage(article.urlToImage)
