@@ -23,7 +23,7 @@ should support api 26 and more
 - Select `Run -> Run 'app'` (or `Debug 'app'`) from the menu bar
 - Select the device you wish to run the app on and click 'OK'
 
-### Tech used
+## Tech used
     - MVVM pattern.
     - Dependency Injection using Hilt.
     - Naviagtion controller for movement.
