@@ -25,12 +25,15 @@ should support api 26 and more
 
 ## Tech used
     - MVVM pattern.
-    - Dependency Injection using Hilt.
+    - Hilt for Dependency Injection.
     - Naviagtion controller for movement.
     - Retrofit for api calling.
     - Couritines for background tasks.
     - Glide for cashing and loading images.
-
+    - Junit for test cases
+    
+## Test case
+  A simple test case to assert the output of dateToAgo function.
 
 ## Api Data
   - sortBy:publishedAt
